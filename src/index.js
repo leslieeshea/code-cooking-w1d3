@@ -7,8 +7,15 @@ pickForm.addEventListener('submit', function(event) {
 
     const randomNumber = Math.random();
     const animal = catOrDog(randomNumber);
-
-    console.log(animal);
+    let imageSource = '';
+    if(animal === 'cat') {
+        imageSource = './assets/cat.jpg';
+    }
+    else {
+        imageSource = './assets/dog.jpg';
+    }
+    
+    console.log(imageSource);
 });
 
 // grab form node from DOM
