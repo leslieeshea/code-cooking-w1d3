@@ -12,17 +12,33 @@
         <h1>Meow or Woof</h1>
     </header>
     <main>
+        <section>
+            Dogs: <span id="dog-count">0</span>
+            Cats: <span id="cat-count">0</span>
+        </section>
+
         <section id="image-container">
             <img src="" class="hidden" id="animal-pic">
         </section>
+
         <section>
             <form id="pick-form">
-                <button>Click Me!</button>
+               <p><button>Click Me!</button></p>
+            </form>
+        </section>
+
+        <section>
+            <form id="radio-form">
+                <label for="hi">Hi!</label>
+                <input type="radio" value="hi" name="side" id="hi" checked>
+                <label for="bye">Bye!</label>
+                <input type="radio" value="bye" name="side" id="bye">
+                <button>Submit</button>
             </form>
         </section>
     </main>
     <script type="module" src="src/index.js"></script>
-    <footer>&copy; Meow or Woof 2019</footer>
+    <footer><p>&copy; Meow or Woof 2019</p></footer>
   
 </body>
 </html>
