@@ -1,6 +1,7 @@
 import catOrDog from './cat-or-dog.js';
 
 const pickForm = document.getElementById('pick-form');
+const image = document.getElementById('animal-pic');
 
 pickForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -15,7 +16,9 @@ pickForm.addEventListener('submit', function(event) {
         imageSource = './assets/dog.jpg';
     }
     
-    console.log(imageSource);
+    image.src = imageSource;
+    image.classList.remove('hidden');
+    
 });
 
 // grab form node from DOM
